@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-go get -u go.ruoyu.dev/sync/time/rate@latest
+go get -u go.ruoyu.dev/sync/time/rate@v0.2.0
 ```
 
 ## Usage
