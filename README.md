@@ -1,6 +1,6 @@
-# gosync
+# `go.ruoyu.dev/sync`
 
-`gosync` is a synchronization package complimentary to Go's standard `sync`
+`go.ruoyu.dev/sync` is a synchronization package complimentary to Go's standard `sync`
 package.
 
 ## Installation
@@ -11,9 +11,9 @@ go get -u go.ruoyu.dev/sync@v0.1.1
 
 ## Usage
 
-The types in `gosync` provides an additional typed interface on top of Go's
-standard [`sync`](https://pkg.go.dev/sync) package. They should work just as
-they do in the standard library. For more information, see the
+The types in `go.ruoyu.dev/sync` provides an additional typed interface on top
+of Go's standard [`sync`](https://pkg.go.dev/sync) package. They should work
+just as they do in the standard library. For more information, see the
 [documentation](https://pkg.go.dev/go.ruoyu.dev/sync).
 
 ## License
