@@ -1,3 +1,3 @@
-module github.com/zhongruoyu/gosync
+module go.ruoyu.dev/sync
 
 go 1.18
