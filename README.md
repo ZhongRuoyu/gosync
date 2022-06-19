@@ -6,7 +6,7 @@ package.
 ## Installation
 
 ```bash
-go get -u go.ruoyu.dev/sync@latest
+go get -u go.ruoyu.dev/sync@v0.1.1
 ```
 
 ## Usage
