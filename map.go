@@ -1,3 +1,5 @@
+// Package sync is a synchronization package complimentary to Go's standard
+// sync package.
 package sync
 
 import (
