@@ -12,9 +12,10 @@ type Pool[E any] struct {
 func NewPool[E any](new func() E) *Pool[E] {
 	pool := &Pool[E]{
 		rwmutex: &sync.RWMutex{},
-		pool: &sync.Pool{
-			New: func() any { return new() },
-		},
+		pool:    &sync.Pool{},
+	}
+	if new != nil {
+		pool.pool.New = func() any { return new() }
 	}
 	return pool
 }
@@ -32,5 +33,9 @@ func (pool *Pool[E]) Put(x E) {
 func (pool *Pool[E]) Update(new func() E) {
 	pool.rwmutex.Lock()
 	defer pool.rwmutex.Unlock()
-	pool.pool.New = func() any { return new() }
+	if new == nil {
+		pool.pool.New = nil
+	} else {
+		pool.pool.New = func() any { return new() }
+	}
 }
