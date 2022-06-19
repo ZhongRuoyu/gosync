@@ -5,9 +5,17 @@ STATICCHECK = $(GOBIN)/staticcheck
 GO_FILES = $(shell find . -name '*.go' -not -path './vendor/*' -print)
 
 
+.PHONY: all
+all: build examples
+
 .PHONY: build
 build:
 	go build ./...
+
+.PHONY: examples
+examples:
+	mkdir -p bin
+	cd bin && go build ../examples/...
 
 
 .PHONY: lint
