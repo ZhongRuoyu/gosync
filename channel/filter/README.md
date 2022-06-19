@@ -6,7 +6,7 @@ extensible filter for channels.
 ## Installation
 
 ```bash
-go get -u go.ruoyu.dev/sync/channel/filter@latest
+go get -u go.ruoyu.dev/sync/channel/filter@v0.2.1
 ```
 
 ## Usage
